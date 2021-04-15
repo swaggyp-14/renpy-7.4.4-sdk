@@ -1,0 +1,1 @@
+running ['C:/Users/Heon Jae/Downloads/renpy-7.4.4-sdk\\lib\\windows-x86_64\\zsync.exe', '-o', 'C:\\Users\\Heon Jae\\Downloads\\renpy-7.4.4-sdk\\update\\web.update.new', '-k', 'C:\\Users\\Heon Jae\\Downloads\\renpy-7.4.4-sdk\\update\\web.zsync', '-i', 'C:\\Users\\Heon Jae\\Downloads\\renpy-7.4.4-sdk\\update\\web.update', 'http://update.renpy.org/7.4.4/renpy-7.4.4-web.zsync']
