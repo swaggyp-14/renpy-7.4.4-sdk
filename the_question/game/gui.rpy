@@ -48,20 +48,21 @@ define gui.muted_color = '#512800'
 define gui.hover_muted_color = '#7a3d00'
 
 ## The colors used for dialogue and menu choice text.
-define gui.text_color = '#ffffff'
+define gui.text_color = '#8C8ABE'
 define gui.interface_text_color = '#ffffff'
+define gui.title_color = '#161254'
 
 
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "NotoSans-Bold.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "NotoSans-Bold.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "NotoSans-Bold.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 22
@@ -86,10 +87,10 @@ define gui.title_text_size = 50
 
 ## The images used for the main and game menus.
 define gui.main_menu_background = "gui/main_menu.png"
-define gui.game_menu_background = "gui/game_menu.png"
+define gui.game_menu_background = "gui/linacc3.jpg"
 
 ## The color of the main menu.
-define gui.main_menu_text_color = "#ffaa22"
+define gui.main_menu_text_color = "#f0dbff"
 
 
 ## Dialogue ####################################################################
@@ -102,8 +103,8 @@ define gui.textbox_height = 185
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
-define gui.textbox_yalign = 1.0
-
+define gui.textbox_yalign = 0.2
+## define gui.textbox_xalign = 0.5
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.

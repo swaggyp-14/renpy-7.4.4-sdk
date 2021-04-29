@@ -346,6 +346,17 @@ style navigation_button_text:
 ##
 ## http://www.renpy.org/doc/html/screen_special.html#main-menu
 
+style start_button:
+    xalign 0.5
+    yalign 0.7
+
+    xpadding 50
+    yfill True
+
+    idle_background Frame("gui/startbutton.png", 0, 0)
+    hover_background Frame("gui/startbutton.png", 0, 0)
+ 
+
 screen main_menu():
 
     ## This ensures that any other menu screen is replaced.
@@ -355,22 +366,18 @@ screen main_menu():
 
     add gui.main_menu_background
 
-    ## This empty frame darkens the main menu.
-    frame:
-        pass
-
-    ## The use statement includes another screen inside this one. The actual
-    ## contents of the main menu are in the navigation screen.
-    use navigation
+    textbutton _("Start") action Start():
+        style "start_button"
 
     if gui.show_name:
 
         vbox:
+            text "[config.version!t]":
+                style "main_menu_version"
+            
             text "[config.name!t]":
                 style "main_menu_title"
 
-            text "[config.version!t]":
-                style "main_menu_version"
 
 
 style main_menu_frame is empty
@@ -379,21 +386,15 @@ style main_menu_text is gui_text
 style main_menu_title is main_menu_text
 style main_menu_version is main_menu_text
 
-style main_menu_frame:
-    xsize 280
-    yfill True
 
-    background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
-    xalign 1.0
-    xoffset -20
-    xsize 960
-    yalign 1.0
-    yoffset -20
+    xalign 0.5
+    xsize 550
+    yalign 0.4
 
 style main_menu_text:
-    properties gui.text_properties("main_menu", accent=True)
+    color gui.title_color
 
 style main_menu_title:
     properties gui.text_properties("title")

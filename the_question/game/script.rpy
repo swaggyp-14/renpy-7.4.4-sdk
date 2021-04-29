@@ -1,6 +1,6 @@
 # Declare characters used by this game.
-define s = Character(_("Sylvie"), color="#c8ffc8")
-define m = Character(_("Me"), color="#c8c8ff")
+define s = Character(_("Sylvie"), color="#c8ffc8",window_background="gui/patientbubble.png")
+define m = Character(_("Me"), color="#c8c8ff",window_background="gui/drbubble.png")
 
 # This is a variable that is True if you've compared a VN to a book, and False
 # otherwise.
